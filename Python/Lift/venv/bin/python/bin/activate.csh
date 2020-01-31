@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/fuzzy/src/Python/UIL/2020/Indeed/src/Lift/venv/bin/python"
+setenv VIRTUAL_ENV "/home/fuzzy/src/Python/UIL/2020/Indeed/src/Python/Lift/venv/bin/python"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

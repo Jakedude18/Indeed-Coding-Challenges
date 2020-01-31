@@ -1,4 +1,4 @@
-#!/home/fuzzy/src/Python/UIL/2020/Indeed/src/Lift/venv/bin/python/bin/python
+#!/home/fuzzy/src/Python/UIL/2020/Indeed/src/Python/Lift/venv/bin/python/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==39.1.0','console_scripts','easy_install'
 __requires__ = 'setuptools==39.1.0'
 import re

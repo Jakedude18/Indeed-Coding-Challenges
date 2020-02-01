@@ -1,3 +1,6 @@
+from scanner
+
+
 class Item:
     weight = 0
     val = 0
@@ -11,7 +14,8 @@ with open('lift.dat') as dat:
     lines = dat.readlines()
     count = int(lines[0])
     for j in range(count):
-        itemCnt = int(lines[j * 3 + 1])
+        itemCnt = int(lines[j * 3sls
+                                 + 1])
         weights = [int(k) for k in lines[j * 3 + 2].strip().split(" ")]
         vals = [int(k) for k in lines[j * 3 + 3].strip().split(" ")]
         cap = int(lines[4])

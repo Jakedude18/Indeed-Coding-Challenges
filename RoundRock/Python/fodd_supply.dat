@@ -1,0 +1,24 @@
+class SurviveRecur:
+    diet = 0
+    barrels = []
+    def __init__(self, str: diet, list: barrels):
+        self.diet = diet
+        self.barrels = barrels
+    
+    def recur(self,cal,days):
+        if len(barrels) is 0:
+            return days
+        if cal >= diet:
+            return days
+        for barrel in barrels[:]:
+            barrels.remove(barrel)
+            print(days + self.recur(cal + barrel,days))
+            barrels.insert(0,barrel)
+            
+with open('food-supply.dat') as dat:
+    for line in dat.readlines():
+        barrels = [int(str) for str in line.strip().split(',')]
+        diet = int(barrels.pop(0))
+        surviveRecur = SurviveRecur(diet, barrels)
+        print(surviveRecur.recur(0,0))
+        

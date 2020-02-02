@@ -45,6 +45,7 @@ public class App {
                     fastestPath = node;
             }
             sort.listTime(fastestPath);
+            //don't append newline to string builder
             if (j != 0)
                 System.out.println();
             res.append(fastestPath.name);

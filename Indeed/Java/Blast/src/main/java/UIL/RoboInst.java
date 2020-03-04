@@ -29,7 +29,8 @@ class RoboInst {
             int tileValue = map.getTileValue(row,col);
             if(tileValue == 0)
                 continue;
-            robots.add(new RoboInst(power - tileValue, row, col));
+            if(power - tileValue >= 0)
+                robots.add(new RoboInst(power - tileValue, row, col));
         }
         return robots;
     }

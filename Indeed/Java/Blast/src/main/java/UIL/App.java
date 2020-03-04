@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws FileNotFoundException {
-
         Scanner dat = new Scanner(new File("blast.dat"));
         Queue<RoboInst> rq = new LinkedList<RoboInst>()                                                                                                                                                                               ;
         MapParser map = new MapParser(dat);

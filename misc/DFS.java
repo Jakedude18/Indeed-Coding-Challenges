@@ -2,22 +2,28 @@ package com.company;
 
 import java.util.*;
 
-public class MapParser {
+public class DFS {
     //orthographical movement
     private static final int[] dr = {-1, 1, 0, 0};
     private static final int[] dc = {0, 0, 1, -1};
 
-    private char[][] map = new char[8][8];
-    private boolean[][] depthBoard = new boolean[8][8];
+    private char[][] map;
+    private boolean[][] depthBoard;
 
     private Point start, end;
 
-    MapParser(Scanner dat) {
+    private int rows,cols;
+
+    MapParser(Scanner dat, int rows, int columns) {
         Scanner maze = new Scanner(dat.next());
-        for (int j = 0; j < 8; j++) {
+        map =  new char[rows][columns];
+        this.rows = rows;
+        this.cols = columns;
+        depthBoard =  new boolean[rows][columns]
+        for (int j = 0; j < rows; j++) {
             map[j] = maze.nextLine().toCharArray();
             //check for start
-            for (int k = 0; k < 8; k++) {
+            for (int k = 0; k < columns; k++) {
                 if (map[j][k] == 'S') {
                     start = new Point(j, k);
                 }
@@ -55,9 +61,9 @@ public class MapParser {
     }
 
     private boolean inBounds(Point point) {
-        if (point.row < 0 || point.row >= 8)
+        if (point.row < 0 || point.row >= rows)
             return false;
-        if (point.col < 0 || point.col >= 8)
+        if (point.col < 0 || point.col >= cols)
             return false;
         return true;
     }

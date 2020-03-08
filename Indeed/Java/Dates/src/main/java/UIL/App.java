@@ -1,9 +1,6 @@
 package UIL;
 
-import jdk.nashorn.internal.codegen.CompilerConstants;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -34,9 +31,9 @@ public class App {
             Date currentDatePlusOne = c.getTime();
 
             System.out.println(dateFormat.format(currentDatePlusOne));
+            //move to next line on scanner
             if(i < count - 1)
                 dat.nextLine();
-            //move to next line on scanner
         }
     }
 }

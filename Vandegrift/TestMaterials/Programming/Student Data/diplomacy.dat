@@ -1,0 +1,16 @@
+3
+3 3
+? ? ? D E F G H I
+A B C
+A-B B-C
+C-D A-F B-H
+4 2
+Green ? Red ? ? ? Orange Yellow
+Purple Gray Blue Pink
+Red-Purple Red-Blue Orange-Blue Orange-Gray
+Green-Purple Blue-Yellow
+3 3
+I II ? III IV ? ? ? V
+VI VII VIII IX
+V-VII
+II-VII II-VIII II-IX IV-IX III-VII

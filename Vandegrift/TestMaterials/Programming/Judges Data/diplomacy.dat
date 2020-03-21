@@ -1,0 +1,36 @@
+7
+3 3
+? ? ? D E F G H I
+A B C
+A-B B-C
+C-D A-F B-H
+4 2
+Green ? Red ? ? ? Orange Yellow
+Purple Gray Blue Pink
+Red-Purple Red-Blue Orange-Blue Orange-Gray
+Green-Purple Blue-Yellow
+3 3
+I II ? III IV ? ? ? V
+VI VII VIII IX
+V-VII
+II-VII II-VIII II-IX IV-IX III-VII
+8 2
+ONE TWO THREE FOUR FIVE SIX SEVEN ? NINE TEN ELEVEN TWELVE THIRTEEN FOURTEEN FIFTEEN SIXTEEN
+EIGHT
+ONE-EIGHT
+SEVEN-EIGHT
+2 2
+? ? I O
+A E
+A-O A-I
+A-E E-O
+4 4
+Red Green Navy Purple White Magenta Gold Blue ? ? ? ? ? ? ? ?
+Cyan Yellow Orange Maroon Black Lime Brown Gray
+Blue-Brown Orange-Black Black-White Orange-Yellow Orange-Brown Orange-Gray Gray-Lime
+Blue-Lime Orange-Cyan Black-Gray Maroon-White
+3 3
+A B C ? ? D E F G
+Z Y
+Y-A Y-E Y-B Y-F
+Z-G
